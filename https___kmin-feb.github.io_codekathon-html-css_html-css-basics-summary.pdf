@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kmin Academy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=p95Nibwjqw-zpdWUSWJBRUjLvqEoT05rJxhM4MbEPEKDmjxfGxWNBE--pZCY2m-FfKpwVyUJVOeJrw5w_BpFJA" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="http://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cDovLzEyNy4wLjAuMTo1NTAwL2luZGV4Lmh0bWw"/></head>
+  <body>
+    <div class="div-head">
+      <h1>HTML & CSS Basics Summary </h1>
+      <img class="logo" id="logo" src="logo.png" alt="" />
+    </div>
+    <div class="div-body">
+      <div class="div-html">
+        <h2>HTML Summary</h2>
+        <div
+          >HTML (HyperText Markup Language) is used to define our page content,
+          structure and meaning. You don't use it for styling purposes. Use CSS
+          for that instead!
+        </div>
+        <dl>
+          <dt
+            >You don't use it for styling purposes. Use CSS for that instead!
+          </dt>
+          <dd class="orange"
+            >HTML uses "elements" to describe (annotate) content</dd
+          >
+          <dd class="space"
+            >HTML elements typically have an opening tag, content and then a
+            closing tag
+          </dd>
+          <dd class="orange"
+            >You can also have void (empty) elements like images
+          </dd>
+          <dd class="orange"
+            >You can also configure elements with attributes
+          </dd>
+          <dd class="space"
+            >There's a long list of available elements but you'll gain
+            experience over time, no worries
+          </dd>
+          <dt
+            >Learn more about all available HTML elements on
+            <a
+              id="mnd-html-link"
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              target="_blank"
+            >
+              the MDN HTML element reference
+            </a>
+          </dt>
+        </dl>
+      </div>
+      <div class="div-css">
+        <div>
+          <h2>CSS Summary</h2>
+          <dl>
+            <dt
+              >CSS (Cascading Style Sheets) is used for styling our page content
+            </dt>
+            <dd class="space">Styles are assigned via property-value pairs </dd>
+            <dd class="space"
+              >You can assign styles via the "style" attributes
+            </dd>
+            <dd class="orange"
+              >To avoid code duplication, you typically use global styles (e.g.
+              via the "style" element) instead
+            </dd>
+            <dd
+              >Alternatively, you can work with external stylesheet files which
+              you "link" to
+            </dd>
+            <dd class="orange"
+              >When working with CSS, concepts like "inheritance", "specificity"
+              and the "box model" should be understood
+            </dd>
+            <dt
+              >Learn more about all available CSS elements on
+              <a
+                id="mnd-html-link"
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS?retiredLocale=vi"
+                target="_blank"
+              >
+                the MDN CSS element reference
+              </a>
+            </dt>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <button
+      ><a
+        id="link-download"
+        href="#"
+        download="https://kmin-feb.github.io/codekathon-html-css/html-css-basics-summary.pdf"
+        >Download PDF Summary</a
+      ></button
+    >
+    <div class="footer">Kmin Academy</div>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>
