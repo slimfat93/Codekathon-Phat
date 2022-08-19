@@ -1,14 +1,15 @@
 html {
   color: white;
   background-color: #f3e9ff;
-}
-body {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   font-family: "Roboto", sans-serifs;
-  margin: 50px;
+}
+main {
+  margin: 0px;
+  width: 50%;
 }
 h1 {
   color: #774ad8;
@@ -16,7 +17,7 @@ h1 {
   margin-bottom: 0px;
 }
 .logo {
-  width: 100px;
+  width: 300px;
   padding: 30px;
 }
 .div-head {
@@ -30,19 +31,9 @@ h1 {
   padding: 30px;
   border-radius: 10px;
 }
-.logo {
-  width: 300px;
-}
-
-.footer {
-  color: #774ad8;
-}
 
 .orange {
   color: orange;
-}
-
-dd.orange {
   border-left: 5px solid orange;
   padding: 10px;
   margin: 1px;
@@ -59,14 +50,22 @@ dd.orange {
 
 .space {
   color: white;
-}
-
-dd.space {
   padding: 10px;
   margin: 1px;
 }
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 button {
+  text-decoration: none;
+  color: #66490a;
+  font-weight: bold;
+  font-size: 20px;
   background-color: #f8c929;
   border: 0px;
   border-radius: 10px;
@@ -75,14 +74,11 @@ button {
   padding: 20px;
 }
 
-#link-download {
-  text-decoration: none;
-  color: #66490a;
-  font-weight: bold;
+span {
+  color: black;
   font-size: 20px;
 }
 
-.footer {
-  color: black;
-  font-size: 20px;
+#link-download {
+  text-decoration: none;
 }
